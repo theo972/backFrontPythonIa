@@ -3,8 +3,20 @@ from enum import Enum
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import requests
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+# Allow all origins in this example; you might want to restrict this in a production environment
+origins = ["http://localhost:3001"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 class ModelType(str, Enum):
