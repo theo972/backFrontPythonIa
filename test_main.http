@@ -5,22 +5,22 @@ Accept: application/json
 
 ###
 
-GET http://127.0.0.1:7000/create_model/model2
+GET http://127.0.0.1:7000/create_model/logisticregression
 Accept: application/json
 
 ###
 
-GET http://127.0.0.1:7000/fit_model/model2
+GET http://127.0.0.1:7000/fit_model/logisticregression
 Accept: application/json
 
 ###
 
-GET http://127.0.0.1:7000/predict_all/model2
+GET http://127.0.0.1:7000/predict_all/logisticregression
 Accept: application/json
 
 ###
 
-POST http://127.0.0.1:7000/predict/model2
+POST http://127.0.0.1:7000/predict/logisticregression
 Accept: application/json
 Content-Type: application/json
 
