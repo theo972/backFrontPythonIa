@@ -2,8 +2,8 @@ FROM nikolaik/python-nodejs:latest
 
 WORKDIR /FASTAPI
 
-COPY ./la-pret-fastApi/main.py .
-COPY ./la-pret-fastApi/requirements.txt .
+COPY ./main.py .
+COPY ./requirements.txt .
 
 RUN pip install -r ./requirements.txt
 
